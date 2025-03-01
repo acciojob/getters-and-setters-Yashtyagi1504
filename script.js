@@ -1,7 +1,7 @@
 class Person {
   constructor(name, age) {
-    this._name = name; // Using _name to avoid direct property access
-    this._age = age;
+    this.name = name; 
+    this.age = age;
   }
 
   // Getter for name
@@ -15,10 +15,9 @@ class Person {
       console.log("Invalid age");
       return;
     }
-    this._age = newAge;
+    this.age = newAge;
   }
 
-  // Getter for age (needed for console.log(person.age))
   get age() {
     return this._age;
   }
