@@ -1,25 +1,21 @@
 class Person {
   constructor(name, age) {
-    this.name = name; 
-    this.age = age;
+    this._name = name; 
+    this._age = age;
   }
 
   // Getter for name
   get name() {
-    return this.name;
+    return this._name;
   }
 
   // Setter for age
   set age(newAge) {
-    if (typeof newAge !== "number" || newAge < 0) {
-      console.log("Invalid age");
-      return;
-    }
-    this.age = newAge;
+    this._age = newAge;
   }
 
   get age() {
-    return this.age;
+    return this._age;
   }
 }
 
