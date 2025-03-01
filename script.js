@@ -6,7 +6,7 @@ class Person {
 
   // Getter for name
   get name() {
-    return this._name;
+    return this.name;
   }
 
   // Setter for age
@@ -19,7 +19,7 @@ class Person {
   }
 
   get age() {
-    return this._age;
+    return this.age;
   }
 }
 
